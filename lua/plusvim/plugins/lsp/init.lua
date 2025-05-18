@@ -3,4 +3,5 @@ return {
 	require("plusvim.plugins.lsp.conform"),
 	require("plusvim.plugins.lsp.mason"),
 	require("plusvim.plugins.lsp.nvim-lint"),
+	require("plusvim.plugins.lsp.tiny-inline-diagnostic"),
 }
