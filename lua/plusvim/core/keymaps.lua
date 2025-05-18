@@ -1,6 +1,6 @@
 -- Save and quit
 map("n", "<C-s>", "<cmd>w<CR>", opts)
-map("n", "<leader>qq", "<cmd>wqa<CR>", opts)
+map("n", "<leader>qq", "<cmd>qa<CR>", opts)
 map("n", "QQ", "<cmd>q<CR>", opts)
 
 map("i", "jj", "<ESC>", opts)
