@@ -23,20 +23,8 @@ return {
 		},
 	},
 	{
-		"WhoIsSethDaniel/mason-tool-installer.nvim",
-		dependencies = { "williamboman/mason.nvim" },
-		opts = {
-			ensure_installed = {
-				-- Formatters
-				"stylua",
-				"isort",
-				"black",
-				"rustfmt",
-				"prettierd",
-				"prettier",
-				"goimports",
-				"gofumpt",
-			},
-		},
+		"zapling/mason-conform.nvim",
+		event = "VeryLazy",
+		opts = {},
 	},
 }

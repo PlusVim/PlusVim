@@ -6,13 +6,12 @@ return {
 			require("lint").linters_by_ft = {
 				lua = { "luacheck" },
 				python = { "pylint" },
-				rust = { "clippy" },
 				javascript = { "eslint_d" },
 				css = { "stylelint" },
-				c = { "cppcheck" },
-				cpp = { "cppcheck" },
+				c = { "cpplint" },
+				cpp = { "cpplint" },
 				yaml = { "actionlint" },
-				go = { "golangci-lint" },
+				go = { "revive" },
 				markdown = { "markdownlint" },
 				json = { "jsonlint" },
 				jsonc = { "jsonlint" },
@@ -20,22 +19,8 @@ return {
 		end,
 	},
 	{
-		"WhoIsSethDaniel/mason-tool-installer.nvim",
-		dependencies = { "williamboman/mason.nvim" },
-		opts = {
-			ensure_installed = {
-				-- Linters
-				"luacheck",
-				"pylint",
-				-- "clippy", Install manually the linter
-				"eslint_d",
-				"stylelint",
-				"cpplint",
-				"actionlint",
-				"golangci-lint",
-				"markdownlint",
-				"jsonlint",
-			},
-		},
+		"rshkarin/mason-nvim-lint",
+		event = "VeryLazy",
+		opts = {},
 	},
 }
