@@ -44,3 +44,5 @@ vim.opt.linebreak = true
 vim.opt.breakindent = true
 
 vim.opt.confirm = true
+
+vim.opt.laststatus = 0
