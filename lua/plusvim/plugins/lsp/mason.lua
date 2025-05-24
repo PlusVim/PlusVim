@@ -2,7 +2,15 @@ return {
 	{
 		"mason-org/mason.nvim",
 		event = "VeryLazy",
-		opts = {},
+		opts = {
+			ui = {
+				icons = {
+					package_installed = " ",
+					package_pending = " ",
+					package_uninstalled = " ",
+				},
+			},
+		},
 	},
 	{
 		"mason-org/mason-lspconfig.nvim",
