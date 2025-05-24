@@ -1,3 +1,5 @@
+local M = {}
+
 -- Tabs & Indentation
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
@@ -46,3 +48,5 @@ vim.opt.breakindent = true
 vim.opt.confirm = true
 
 vim.opt.laststatus = 0
+
+return M

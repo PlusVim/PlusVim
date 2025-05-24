@@ -1,3 +1,3 @@
 return {
-	require("plusvim.plugins.lsp"),
+	import = "plusvim.plugins",
 }
